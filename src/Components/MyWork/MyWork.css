@@ -1,0 +1,65 @@
+
+.MyWork{
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  margin: 50px 100px;
+  
+
+}
+.MyWork-title{
+  position: relative;
+
+}
+.MyWork-title h1{
+  font-size: 50px;
+    font-weight: 700;
+    background: linear-gradient(270deg, #DF8908 50.41%, #B414FF 90.25%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+/* .work_container img {
+  height: 200px;
+  width: 200px;
+  gap: 30px;
+} */
+
+.mywork_container {
+  display: flex;
+  flex-wrap: wrap; /* Allows the images to wrap if they overflow */
+  justify-content: center; /* Center the images horizontally */
+  gap: 16px; /* Adds space between the images */
+  padding: 20px;
+}
+
+.mywork_container img {
+  width: 320px; /* Set a specific width for the images */
+  height: 320; /* Maintain the aspect ratio */
+  object-fit: cover; /* Ensure the images cover the given width/height */
+  transition: transform 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.mywork_container img:hover {
+  transform: scale(1.1); /* Slightly increase size on hover */
+  /* border: 2px solid rgb(236, 74, 101); */
+}
+.mywork-showmore{
+  display: flex;
+  gap:15px;
+  border-radius: 50px;
+  border: 2px solid white;
+  padding: 15px 30px;
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: 500;
+  transition: 0.6s;
+  cursor: pointer;
+}
+.mywork-showmore:hover{
+  gap: 30px;
+  transition: 0.6s;
+}
